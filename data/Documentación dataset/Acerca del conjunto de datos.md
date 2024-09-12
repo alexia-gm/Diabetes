@@ -35,3 +35,69 @@ Es importante reiterar que yo no he creado este conjunto de datos, es sólo un c
   ## Inspiración
 
   Zidian Xie et al para Building Risk Prediction Models for Type 2 Diabetes Using Machine Learning Techniques using the 2014 BRFSS fue la inspiración para crear este conjunto de datos y explorar el BRFSS en general. [Enlace](https://www.cdc.gov/pcd/issues/2019/19_0109.htm)
+
+  
+
+  ## Para plantear un buen proyecto con los datos de la encuesta BRFSS2015, y considerando que ya tienes tres CSV con distintas variables relacionadas con la salud, te sugiero seguir estos pasos para guiar el análisis y los objetivos del proyecto. Aquí van algunas ideas sin entrar en código, solo en la planificación general:
+
+1. Definir el objetivo principal
+
+Lo primero es tener claro qué quieres predecir o explorar. Dado que estás trabajando con temas de salud, podrías enfocarte en:
+
+  • Predicción de la probabilidad de que una persona sea diabética basada en variables de estilo de vida y factores de riesgo.
+  • Evaluar la relación entre diferentes factores (como actividad física, consumo de frutas y verduras, hábito de fumar) y el riesgo de desarrollar diabetes u otras enfermedades como hipertensión o problemas cardíacos.
+  • Clasificación de las personas en diferentes grupos de riesgo para enfermedades crónicas en función de hábitos y características demográficas.
+
+Ejemplo:
+
+  • Predicción: ¿Cuál es la probabilidad de que una persona desarrolle diabetes en función de variables como edad, actividad física, IMC, y consumo de frutas/verduras?
+  • Segmentación: ¿Qué grupos de personas tienen más riesgo de padecer enfermedades cardíacas en función de su nivel de educación, ingresos y acceso a atención médica?
+
+2. Explorar correlaciones y patrones entre variables
+
+Una excelente manera de comenzar es realizando un análisis exploratorio de los datos (EDA). Podrías:
+
+  • Explorar cómo se correlacionan las variables demográficas (edad, sexo, educación) con las variables de salud (diabetes, hipertensión, colesterol alto).
+  • Visualizar distribuciones para ver si ciertos comportamientos o características son más comunes en grupos con enfermedades específicas.
+  • Identificar factores protectores y factores de riesgo.
+
+Ejemplo:
+
+  • ¿Existe una correlación entre el nivel de ingresos y la probabilidad de tener acceso a atención médica y, por ende, un mejor control de la diabetes?
+
+3. Elegir un modelo de predicción o segmentación
+
+Una vez tengas claros los patrones y relaciones, puedes decidir qué tipo de análisis realizar. Algunas ideas:
+
+  • Clasificación binaria: Como mencionaste, podrías usar todas las variables disponibles para predecir si una persona tiene diabetes o no. Este enfoque es directo y te permitirá probar diferentes algoritmos de Machine Learning.
+  • Análisis de regresión: Para explorar qué variables influyen más en el desarrollo de condiciones como la diabetes o enfermedades cardíacas, podrías utilizar una regresión logística que te diga qué factores tienen un mayor peso en la predicción de esas enfermedades.
+  • Análisis de clustering: Podrías usar técnicas de agrupamiento para identificar perfiles o clusters de personas con características similares. Esto podría ayudarte a descubrir subgrupos en la población que presentan mayor o menor riesgo de ciertas enfermedades.
+
+4. Segmentación por población vulnerable
+
+Puedes centrarte en identificar qué grupos de la población son más vulnerables en términos de salud, ya sea por ingresos, falta de acceso a atención médica, educación, o comportamientos de riesgo como fumar y consumo excesivo de alcohol.
+
+Ejemplo:
+
+  • ¿Cómo varía el riesgo de hipertensión en función del acceso a atención médica y el nivel educativo? ¿Las personas con menos recursos económicos tienen peor salud general?
+
+5. Proponer acciones o políticas
+
+El valor de tu proyecto puede ir más allá de la predicción de enfermedades. Puedes plantear sugerencias sobre cómo mejorar la salud pública basándote en los hallazgos de tu análisis. Podrías:
+
+  • Identificar áreas donde la intervención (como campañas de salud o promoción de la actividad física) sería más efectiva para reducir el riesgo de enfermedades.
+  • Proponer políticas de acceso a salud o programas educativos enfocados en los grupos que más lo necesitan.
+
+6. Considerar la interpretabilidad del modelo
+
+En un proyecto sobre salud, la interpretabilidad es clave. Si eliges modelos complejos como XGBoost o redes neuronales, considera incluir análisis adicionales que expliquen por qué el modelo tomó ciertas decisiones, como SHAP values o feature importance.
+
+Resumen del proyecto planteado:
+
+- Objetivo: Predecir si una persona es diabética usando factores de estilo de vida, salud y
+  características demográficas.
+- EDA: Analizar correlaciones, distribuciones y patrones entre las variables.
+- Modelo: Clasificación binaria o regresión logística, quizás complementado con análisis de
+  clustering.
+- Resultados: Identificar los factores clave que predicen diabetes y hacer recomendaciones para
+  políticas de salud pública o intervenciones específicas." 
